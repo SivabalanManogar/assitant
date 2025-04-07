@@ -13,6 +13,9 @@ console.log("✅ Loaded API Key:", process.env.GEMINI_API_KEY);
 
 app.use(cors());
 app.use(bodyParser.json());
+app.get("/", (req, res) => {
+  res.send("Hello from Gemini API server!");
+})
 
 app.post("/chat", async (req, res) => {
   const userMessage = req.body.message;
