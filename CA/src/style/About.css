@@ -1,0 +1,149 @@
+.about-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
+
+.about-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.about-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.about-intro, .about-features, .about-goals, .about-how-it-works {
+  margin: 40px 0;
+}
+
+.about-intro h2, .about-features h2, .about-goals h2, .about-how-it-works h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-intro p, .about-features p, .about-goals p, .about-how-it-works p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.features-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 22%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.about-how-it-works .steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.step {
+  background-color: #fff;
+  padding: 20px;
+  width: 22%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.step h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.about-footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+
+  .about-intro h2, .about-features h2, .about-goals h2, .about-how-it-works h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-intro p, .about-features p, .about-goals p, .about-how-it-works p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .features-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .about-how-it-works .steps {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .about-footer {
+    font-size: 1rem;
+  }
+}

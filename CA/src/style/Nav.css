@@ -1,0 +1,111 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    
+      background-color: rgb(241, 239, 236);
+    color: black;
+    position: relative;
+    box-shadow: 0 12px 24px rgba(157, 50, 50, 0.2);
+    transform: translateY(-10px);
+    border-radius: 35px;
+    z-index: 1001;
+   
+   
+}
+
+.navbar .rightside img {
+    width: 50px;
+}
+
+
+.menu-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: rgb(21, 4, 4);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.hiddenLinks {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000; 
+}
+
+
+.hiddenLinks a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    display: block;
+   
+}
+
+.hiddenLinks a:hover {
+    transform: scale(0.9);
+    box-shadow: 0px 10px 20px green;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.hiddenLinks.open {
+    display: flex;
+}
+.logout-btn {
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .logout-btn:hover {
+    background-color: #ff0000;
+  }
+  
+  
+
+
+@media screen and (min-width: 600px) {
+    .menu-button {
+        display: none;
+    }
+
+    .hiddenLinks {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        padding: 0;
+    }
+
+    .hiddenLinks a {
+        padding: 10px 15px;
+    }
+}
+.one{
+    padding-left: 20%;
+}
+.two{
+    color: rgb(191, 194, 29);
+} 
+
+
+
+

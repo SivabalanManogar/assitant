@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f5f5f5;
+}
+
+.home-container {
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  background: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://cdn.pixabay.com/photo/2021/07/20/06/13/businessmen-6479839_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s ease-in;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  animation: slideUp 1.5s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 15px 30px rgba(255, 65, 108, 0.5);
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+.features {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f0f2f5, #e3e8ef);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature {
+  background: #fff;
+  border-radius: 15px;
+  width: 320px;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(189, 130, 12, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.feature:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 2px 30px 40px rgba(6, 197, 6, 0.4);
+}
+
+.feature .icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff416c;
+}
+
+.feature h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.career-insights {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fff, #f8f9fa);
+  text-align: center;
+}
+
+.career-insights h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #222;
+  font-weight: bold;
+}
+
+.insight-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.insight {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  width: 320px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.insight:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.insight h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.insight p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.welcome-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #00b894;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: fadeInPop 0.6s ease;
+}
+
+@keyframes fadeInPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
